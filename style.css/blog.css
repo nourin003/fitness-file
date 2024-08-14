@@ -4,6 +4,11 @@
 /*body{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }*/
+body{
+    background-color: rgb(14, 13, 13);
+}
+    
+
 
 
 /*Header section styles*/
@@ -32,13 +37,13 @@
 .nav-links{
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content:center;
    align-items: center;
    gap: 47px;
    border: 1px solid rgba(255, 255, 255, 0.1);
    border-radius: 39px;
    height: 46px;
-   padding: 4px;
+   padding: 10px;
     
 }
 .nav-list{
@@ -58,4 +63,46 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+/*Banner image section star*/
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-size: 4.9rem;
+    font-weight: 800;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+   /* gap: 28px;*/
+}
+.button-section{
+    
+}
+.join-button{
+    padding: 16px 40px 16px 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 42px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-right: 14px;
+    
+}
+.download-button{
+    padding: 16px 40px 16px 40px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(14, 13, 13);
+    color: rgb(255, 255, 255);
+    border-radius: 42px;
+    font-size: 1.12rem;
+    font-weight: 600;
+
 }
