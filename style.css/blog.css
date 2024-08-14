@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*body{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}*/
+
+
+/*Header section styles*/
+.bg-navbar{
+    height: 715px;
+    width: 100%;
+    border: 2px solid red;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 46px;
+    width:100%;
+    border: 2px solid red;
+    margin-top: 50px;
+}
+#brand{
+    color: rgb(230, 83, 60);
+    font-size:2.25rem ;
+    font-weight: 800;
+    font-style: italic;
+}
+.nav-links{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 47px;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   border-radius: 39px;
+   height: 46px;
+   padding: 4px;
+    
+}
+.nav-list{
+    list-style: none;
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+#home-color{
+    width: 92px;
+    height: 30px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px 8px 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
