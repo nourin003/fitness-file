@@ -65,7 +65,7 @@ body{
     align-items: center;
 }
 
-/*Banner image section star*/
+/*Banner container section star*/
 .banner-container{
     display: flex;
     justify-content: space-around;
@@ -76,12 +76,16 @@ body{
     color: rgb(255, 255, 255);
     font-size: 4.9rem;
     font-weight: 800;
+    margin-bottom: 0px;
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
    /* gap: 28px;*/
+}
+.banner-contents span{
+    font-style: italic;
 }
 .button-section{
     
@@ -105,4 +109,90 @@ body{
     font-size: 1.12rem;
     font-weight: 600;
 
+}
+.banner-card{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(48, 48, 48, 0.54);
+    height: 90px;
+    width: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+#first-card{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    
+}
+#second-card{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+.banner-card h5{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0px;
+}
+#workout-card{
+    position: absolute;
+    bottom: 56%;
+    left: 80%;
+    z-index: 1;
+   
+   
+}
+#tutorial-card{
+    position: absolute;
+    bottom: 10%;
+    left: 58%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+        flex-direction: column;
+        margin-top: 0px;
+        height: 0px;
+        
+    }
+    .nav-links{
+        flex-direction: column;
+        border: none;
+        gap: 10px;
+        
+    }
+    .banner-container{
+        flex-direction: column;
+
+    }
+    .bg-navbar{
+        height: auto;
+    }
+    .banner-title{
+        
+    }
+    #workout-card{
+    position:static;
+   
+    }
+    #tutorial-card{
+        position: static;
+       
+    
+    }
+    .banner-card{
+         
+    }
+
+    
 }
