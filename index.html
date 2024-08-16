@@ -185,23 +185,28 @@
                 <h3 class="chart-title">Calculate your BMI</h3>
                 <p class="bmi-calculate-description">We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
                 <form action="">
-                    <input type="text" placeholder="Height/cm">
-                    <input type="text" placeholder="Weight/kg">
-                    <input type="text" placeholder="Age">
-                    <select name="" id="" >
-                        <option value="">Sex</option>
-                        <option value="0">Male</option>
-                        <option value="1">Female</option>
+                    <div class="first-section">
+                        <input id="first-form" type="text" placeholder="Height/cm">
+                    <input id="first-form" type="text" placeholder="Weight/kg">
+                    <input id="first-form" type="text" placeholder="Age">
+                    <select name="" id="first-form" >
+                        <option id="text" value="">Sex</option>
+                        <option id="text" value="0">Male</option>
+                        <option id="text" value="1">Female</option>
                     </select>
-                    <select name="" id="" >
-                        <option value="">Select an activity factor</option>
-                        <option value="0">Exercise regularly</option>
-                        <option value="1">Eat healthy food</option>
-                        <option value="2">Drink enough water</option>
-                        <option value="3">Regular sleep habit</option>
-                        <option value="4">Weight loss</option>
-                    </select>
+                    </div>
+                    <div class="second-section">
+                        <select name="" id="second-form" >
+                            <option id="text" value="">Select an activity factor</option>
+                            <option id="text" value="0">Exercise regularly</option>
+                            <option id="text" value="1">Eat healthy food</option>
+                            <option id="text" value="2">Drink enough water</option>
+                            <option id="text" value="3">Regular sleep habit</option>
+                            <option id="text" value="4">Weight loss</option>
+                        </select>
+                    </div>
                 </form>
+                <button class="calculate-button">Calculate</button>
 
 
             </div>
