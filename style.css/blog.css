@@ -325,7 +325,71 @@ body{
  }
 
  /*BMI section start here*/
+.bmi-container{
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 65px;
+     margin: 30px auto;  
+}
+.bmi-content{
+    margin-left: 0;
+}
+.bmi-title{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.bmi-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.cap9rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.bmi-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(34, 34, 34);
+    width:100%;
+    border-radius: 18px;
+   /* padding-left: 50px;*/
+    height: 371px;
+    margin: 90px auto;
 
+}
+.chart-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+
+}
+.bmi-chart{
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+}
+th, td{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+th{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: justify;
+}
  
 @media screen and (max-width: 576px){
     .navbar{
