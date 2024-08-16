@@ -34,6 +34,7 @@ body{
     font-size:2.25rem ;
     font-weight: 800;
     font-style: italic;
+    
 }
 .nav-links{
    display: flex;
@@ -192,7 +193,7 @@ body{
 .habit-description{
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.cap9rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-bottom: 0px;
 }
@@ -452,7 +453,149 @@ td{
     padding: 16px 40px 16px 40px;
     margin-top: 20px;
 }
+
+/*Team section start here*/
+.team-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+ .team-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 53px;
+ }
+ .team-title{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+ }
+ .team-description{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+ }
+/* .image-container{
+    align-self: center;
+    justify-self: center;
+ }*/
  
+
+ .team-img{
+    
+    width: 1060px;
+    height: 604px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;  
+ }
+ #team-image{
+    width: 326px;
+    height: 272px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2),url(image);
+    
+ }
+ .team-img h4{
+    font-size:1rem ;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+ }
+ .team-img p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+   
+ }
+ .trainer-intro{
+    position: relative;
+   bottom: 90px;
+   left: 16px;
+ }
+
+ /*Footer section start here*/
+ .footer-container{
+    width: 100%;
+    height: 489px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin-top: 90px;
+    background: rgba(255, 255, 255, 0.1);
+    
+ }
+ .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 150px;
+ }
+ .footer-title{
+    color: rgb(230, 83, 60);
+    font-size:2.25rem ;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 20px;
+
+ }
+ .footer-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 0px;
+    
+ }
+ .footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+ .footer-info h5{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+
+ }
+ .footer-info p{
+    list-style: none;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0px;
+ }
+ .long-line{
+    height: 0px;
+    width: 72%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+ }
+ .footer-text p{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 70px;
+    color: rgba(255, 255, 255, 0.5);
+ }
+
 @media screen and (max-width: 576px){
     .navbar{
         flex-direction: column;
@@ -539,6 +682,17 @@ td{
     }
     .bmi-calculate{
         margin-top: 15px;
+    }
+    .footer-container{
+        flex-direction: column;
+        height: 986px;
+    }
+    .footer-content{
+       display: block;
+       
+    }
+    .footer-info{
+        margin-top: 0px;
     }
     
 }
