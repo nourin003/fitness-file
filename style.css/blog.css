@@ -16,7 +16,7 @@ body{
 .bg-navbar{
     height: 715px;
     width: 100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     margin: 0 auto;
 }
@@ -26,8 +26,9 @@ body{
     align-items: center;
     height: 46px;
     width:100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     margin-top: 50px;
+    margin-bottom: 0px;
 }
 #brand{
     color: rgb(230, 83, 60);
@@ -72,6 +73,10 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+   margin-top: 40px;
+    padding-top: 0px;
+    margin-bottom: 50px;
+
     
 }
 .banner-title{
@@ -80,6 +85,7 @@ body{
     font-weight: 800;
     margin-bottom: 0px;
 }
+
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
@@ -151,16 +157,24 @@ body{
 #workout-card{
     position: absolute;
     bottom: 56%;
-    left: 80%;
+    left: 78%;
     z-index: 1;
     text-align: center;
    
    
 }
+.round-line{
+    background-color: rgb(230, 83, 60);
+    height: 40px;
+    width: 40px;
+    border: 2px;
+    border-radius: 50%;
+    
+}
 #tutorial-card{
     position: absolute;
     bottom: 10%;
-    left: 58%;
+    left: 60%;
     z-index: 1;
     text-align: center;
 }
@@ -171,7 +185,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 65px;
 
@@ -200,7 +214,7 @@ body{
 .exercise-img{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 
@@ -596,50 +610,52 @@ td{
     color: rgba(255, 255, 255, 0.5);
  }
 
-@media screen and (max-width: 576px){
+
+
+
+ @media screen and (max-width: 576px) {
     .navbar{
         flex-direction: column;
         margin-top: 0px;
         height: 0px;
-        
     }
     .nav-links{
         flex-direction: column;
         border: none;
         gap: 10px;
-        
     }
     .banner-container{
         flex-direction: column;
-
+        margin-top: 180px;
     }
     .bg-navbar{
         height: auto;
     }
-    .banner-title{
-        
-    }
     #workout-card{
-    position:static;
-   
+        position: absolute;
+        bottom: -79%;
+        left: 51%;
+        z-index: 1;
+        text-align: center;
     }
     #tutorial-card{
-        position: static;
-       
-    
+        position: absolute;
+        bottom: -100%;
+        left: 5%;
+        z-index: 1;
+        text-align: center;
     }
-    .banner-card{
-         
+    .join-button{
+        margin-bottom: 25px;
     }
-    
+    .download-button{
+        margin-bottom: 25px;
+    }
     .habit-title{
         text-align: center;
-       
-        display: block;
     }
     .exercise-img{
         flex-direction: column;
-        
     }
     .run-container{
         flex-direction: column;
@@ -647,20 +663,22 @@ td{
         height: 751px;
         gap: 30px;
         margin: 0 auto;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 65px;
-        padding: 0;
-    
-        
+        padding: 0px;
     }
     .food-container{
         width: 100%;
         margin-top: 30px;
         padding: auto;
+        flex-direction: column;
+        
+    }
+    .food-content{
+        display: block;
     }
     .food-img{
         flex-direction: column;
@@ -668,31 +686,51 @@ td{
     }
     .bmi-details{
         flex-direction: column;
-        
+        height: 100%;
+        padding: 15px;
+    }
+    .bmi-calculate{
+        margin-top: 15px;
     }
     .first-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 8px;
-    
-       
     }
-    .bmi-details{
-        height: 100%;
-    }
-    .bmi-calculate{
-        margin-top: 15px;
+    /*.team-img{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }*/
+    .food-container{
+        
+        width: 100%;
+        
     }
     .footer-container{
-        flex-direction: column;
-        height: 986px;
+        height: 100%;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 15px ;
+        
     }
     .footer-content{
-       display: block;
-       
+        flex-direction: column;
+        display: block;
     }
     .footer-info{
         margin-top: 0px;
     }
-    
-}
+    .long-line{
+        margin-top: 15px;
+        width: 80%;
+    }
+    .footer-text p{
+        margin-top: 15px;
+        text-align: start;
+    }
+
+ }
+
